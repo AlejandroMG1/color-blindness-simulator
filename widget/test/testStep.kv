@@ -1,0 +1,26 @@
+<Step>
+    cols: 1
+
+    Image:
+        id: test_image
+    GridLayout:
+        rows:2
+        Label:
+            text:"ingrese el valor de la imagen, ingrese 0 si no identifica nada"
+        TextInput:
+            id: input
+            multiline: False
+            input_filter: "int"
+
+    GridLayout:
+        cols: 2
+        Button:
+            id: previous
+            text: "Previous"
+            on_press: root.previous()
+
+        Button:
+            id: next
+            text: "Next"
+            disabled: True if input.text == '' else False
+            on_press: root.next()

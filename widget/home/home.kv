@@ -1,0 +1,19 @@
+<Home>
+    cols:1
+    Label:
+        text:"Selecciona la acción deseada"
+
+    Button:
+        text:"tomar test"
+        on_press: root.take_test()
+
+    GridLayout:
+        cols: 2
+
+        Button:
+            text: "Simular Deuteranopia"
+            on_press: root.deuteranopia()
+
+        Button:
+            text: "Simular Protanopia"
+            on_press: root.protanopia()
