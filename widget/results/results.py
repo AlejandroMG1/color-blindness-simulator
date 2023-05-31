@@ -21,7 +21,7 @@ class Results(GridLayout):
         if self.type == "deu":
             self.ids.results.text = "Se ha identificado Deuteranopia"
         elif self.type == "prot":
-            self.ids.results.text = "Se ha identificado Deuteranopia"
+            self.ids.results.text = "Se ha identificado Protanopia"
         else:
             self.ids.results.text = "No se ha identificado ninguna anomalia"
             self.ids.go.text = "Tomar el test de nuevo"
