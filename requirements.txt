@@ -1,4 +1,4 @@
-kivy[base]~=2.2.0
+kivy[base]
 kivymd
-opencv-python~=4.7.0.72
+opencv-python
 numpy
